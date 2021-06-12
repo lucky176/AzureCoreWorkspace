@@ -17,7 +17,7 @@ namespace azureDbSalary.Controllers
         {
             _logger = logger;
         }
-
+        
         public IActionResult Index()
         {
             return View();
@@ -33,5 +33,7 @@ namespace azureDbSalary.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+       
+
     }
 }
